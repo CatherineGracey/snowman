@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  margin: 0;
+  position: relative;
+}
+
+.ground {
+  background-color: white;
+  height: 20px;
+  width: 100%;
+  border-radius: 25% 25% 0 0;
+  border-top: 35px white solid;
+  position: absolute;
+  bottom: 0;
+}
