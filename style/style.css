@@ -6,12 +6,51 @@ html, body {
   position: relative;
 }
 
+.snowman {
+  text-align: center;
+  width: 40vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  margin-left: -20vh;
+}
+
+.head, .upper-body, .lower-body {
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.head {
+  height: 18vh;
+  width: 20vh;
+  top: 8vh;
+}
+
+.upper-body {
+  height: 26vh;
+  width: 30vh;
+  top: 5vh;
+}
+
+.lower-body {
+  height: 35vh;
+  width: 40vh;
+}
+
+.coal {
+  display: inline-block;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
 .ground {
   background-color: white;
-  height: 20px;
+  height: 5vh;
   width: 100%;
-  border-radius: 25% 25% 0 0;
-  border-top: 35px white solid;
+  border-radius: 35% 35% 0 0;
+  border-top: 5vh white solid;
   position: absolute;
   bottom: 0;
 }
