@@ -107,3 +107,10 @@ html, body {
   position: absolute;
   bottom: 0;
 }
+
+.snow {
+  height: 1px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+}
