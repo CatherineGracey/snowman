@@ -18,31 +18,59 @@ html, body {
 .head, .upper-body, .lower-body {
   background-color: white;
   border-radius: 50%;
-  display: inline-block;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
 }
 
 .head {
   height: 18vh;
   width: 20vh;
-  top: 8vh;
+  bottom: 52vh;
+  margin-left: -10vh;
 }
 
 .upper-body {
   height: 26vh;
   width: 30vh;
-  top: 5vh;
+  bottom: 30vh;
+  margin-left: -15vh;
 }
 
 .lower-body {
   height: 35vh;
   width: 40vh;
+  bottom: 0;
+  margin-left: -20vh;
+}
+
+.eyes {
+
+}
+
+.mouth {
+
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20vh;
+  width: 2.5vh;
+  margin: auto;
+  z-index: 1;
 }
 
 .coal {
   display: inline-block;
-  border: 5px solid black;
+  border: 1vh solid black;
   border-radius: 50%;
+  width: .5vh;
+  height: .5vh;
+  background-color: black;
+  margin: 0.5vh
 }
 
 .ground {
