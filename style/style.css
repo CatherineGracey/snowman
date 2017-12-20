@@ -45,12 +45,47 @@ html, body {
   margin-left: -20vh;
 }
 
-.eyes {
+.coal {
+  display: inline-block;
+  border: 1vh solid black;
+  border-radius: 50%;
+  width: .5vh;
+  height: .5vh;
+  background-color: black;
+  margin: 0.5vh
+}
 
+.eyes {
+  margin-top: 2vh;
+}
+
+.carrot {
+  width: 0;
+  height: 0;
+  border-top: 2vh solid transparent;
+  border-bottom: 0.5vh solid transparent;
+  border-right: 5.5vh solid orange;
+  margin-left: 5vh;
 }
 
 .mouth {
+  margin-top: 1vh;
+}
 
+.mouth .coal {
+  margin: 0.2vh;
+  width: .4vh;
+  height: .4vh;
+}
+
+.mouth .coal:nth-child(even) {
+  position: relative;
+  top: 1vh;
+}
+
+.mouth .coal:nth-child(3) {
+  position: relative;
+  top: 1.5vh;
 }
 
 .buttons {
@@ -61,16 +96,6 @@ html, body {
   width: 2.5vh;
   margin: auto;
   z-index: 1;
-}
-
-.coal {
-  display: inline-block;
-  border: 1vh solid black;
-  border-radius: 50%;
-  width: .5vh;
-  height: .5vh;
-  background-color: black;
-  margin: 0.5vh
 }
 
 .ground {
