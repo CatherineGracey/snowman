@@ -114,3 +114,46 @@ html, body {
   background-color: white;
   position: absolute;
 }
+
+.tree {
+  text-align: center;
+  width: 40vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 20%;
+  margin-left: -20vh;
+  background-color: aquamarine;
+}
+
+.snow-layer {
+  width: 0;
+  height: 0;
+  border-bottom: 71vh solid white;
+  border-left: 13vh solid transparent;
+  border-right: 13vh solid transparent;
+  margin-left: 4vh;
+  position: absolute;
+  left: 0;
+  bottom: 21vh;
+}
+
+.branches {
+  width: 0;
+  height: 0;
+  border-bottom: 67vh solid green;
+  border-left: 12vh solid transparent;
+  border-right: 12vh solid transparent;
+  margin-left: 5vh;
+  position: absolute;
+  left: 0;
+  bottom: 20vh;
+}
+
+.trunk {
+  height: 20vh;
+  width: 10vh;
+  background-color: brown;
+  position: absolute;
+  left: 12vh;
+  bottom: 0;
+}
