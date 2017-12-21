@@ -31,11 +31,9 @@ function makeSnowFall(){
     height++;
     if (height < (pageHeight - snowLayer)){//Snow has not reached the ground, so keep falling
       snowFlakes[snowflake].style.top = height + "px";
-    } else if (!isSnowFalling) {//Snow has reached the ground and should finish.
+    } else {//Snow has reached the ground and should finish.
       removeElement(snowFlakes[snowflake]);
       snowflake--;
-    } else { //Snow has fallen, so reset it to the top to make the snow layer thicker
-      snowFlakes[snowflake].style.top = "1px";
     }
   }
   if (!snowFlakes.length){
@@ -47,11 +45,16 @@ function removeElement(element){
   element.parentNode.removeChild(element);
 }
 
+function stopSnowing() {
+  clearInterval(fallingSnow);
+  fallingSnow = window.setTimeout(startSnowing, 1000);
+}
+
 function startSnowing(){
   isSnowFalling = true;
-  fallingSnow = window.setInterval(makeSnowFall, 50);
+  fallingSnow = window.setInterval(makeSnowFall, 75);
 }
 
 window.onload = function(){
-  fallingSnow = window.setTimeout(startSnowing, 1000)
+  stopSnowing();
 };
