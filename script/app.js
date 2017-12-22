@@ -52,7 +52,7 @@ function stopSnowing() {
 
 function startSnowing(){
   isSnowFalling = true;
-  fallingSnow = window.setInterval(makeSnowFall, 75);
+  fallingSnow = window.setInterval(makeSnowFall, 100);
 }
 
 window.onload = function(){
